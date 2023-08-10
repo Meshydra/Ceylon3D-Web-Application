@@ -21,6 +21,7 @@ font & reset css
 
 
 */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 :root{
   --black: #000;
@@ -176,7 +177,8 @@ p {
 }
 
 .main-button a:hover {
-  background-color: #fff;
+  background-color: #fff;  
+  padding: 10px 28px;
   border: #ff1010 solid 1px;
   color: #ff1010;
 }
@@ -201,6 +203,8 @@ p {
   border-color: #fff;
   background-color: #fff;
   color: #ff1010;
+  
+  padding: 10px 28px;
 }
 
 .border-no-active a {
@@ -223,12 +227,17 @@ section {
   font-size: 34px;
   text-decoration: none;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .heading-section h4 em {
   color: rgb(0, 0, 0);
   font-style: normal;
   text-decoration: underline;
+}
+
+.col-lg-12{
+  padding-top:20px ;
 }
 
 /* 
@@ -243,7 +252,7 @@ Pre-loader Style
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.99);
+  background-color: rgba(255, 255, 255, 0.99);
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -470,11 +479,6 @@ Header Style
   background-color: red;
   border-radius: 8px;
   color: white;
-}
-
-.header-area .main-nav .nav .social a img {
-  max-width: 30px;
-  margin-left: 5px;
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu .social a:hover,
@@ -887,70 +891,43 @@ Most Popular Style
   margin-bottom: -53px;
 }
 
-/* 
----------------------------------------------
-Gaming Library Style
---------------------------------------------- 
-*/
+/* services */
 
-.gaming-library {
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #1f2122;
-  border-radius: 23px;
+.container {
+  background-color: ;
 }
 
-.gaming-library .item {
-  border-bottom: 1px solid #27292a;
-  margin-bottom: 20px;
+/* portfolio section */
+#portfolio-header {
+  background: url('../images/portfolio-header.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding-top: 160px;
+}
+#portfolio {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  }
+#portfolio h2 {
   padding-bottom: 20px;
 }
-
-.gaming-library .last-item {
-  margin-bottom: 30px;
+#portfolio .col-md-4,
+#portfolio .col-md-3 {
+  padding: 0;
+  margin: 0;
 }
-
-.profile-library .last-item {
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+#portfolio img {
+  width: 100%;
+  transition: all 0.4s ease-in;
+  opacity: 0.8;
 }
-
-.gaming-library .item ul li {
-  margin-top: 15px;
+#portfolio img:hover {
+  opacity: 1;
 }
-
-.gaming-library .item ul li img {
-  margin-top: -30px;
-}
-
-.gaming-library .item ul li {
-  display: inline-block;
-  width: 17%;
-}
-
-.gaming-library .item ul li:first-child {
-  width: 110px;
-}
-
-.gaming-library .item ul .social {
-  width: 15%;
-  text-align: right;
-}
-
-.gaming-library .item ul li h4 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.gaming-library .item ul li span {
-  color: #666;
-  font-size: 14px;
-}
-
-.gaming-library .main-button {
-  text-align: center;
-  margin-bottom: -53px;
+#portfolio .btn {
+  margin-top: 30px;
 }
 
 /* 
@@ -962,12 +939,12 @@ Footer Style
 footer p {
   text-align: center;
   padding: 30px 0px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 300;
 }
 
 footer p a {
-  color: #fff;
+  color: rgb(255, 0, 0);
   transition: all .3s;
 }
 
